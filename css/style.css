@@ -1,0 +1,162 @@
+#fixed{
+  position: fixed;
+  width: 100%;
+  margin-top: -70px;
+}
+#margin-for-fixed{
+  margin-top: 70px;
+}
+/*header固定ここまで*/
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1dace0;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 0;
+}
+.icon{
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+  border-radius: 10px;
+}
+
+.icon img{
+  height: 60px;
+
+}
+.icon .name strong{
+  color: #eae51f;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-right:80px;
+
+}
+.header-right li:first-child{
+  margin-right: 20px;
+}
+
+
+.shushinchi {
+
+  background-image: url(../img/shushinchi.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  
+  height: 500px;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+}
+.title {
+  font-size: 64px;
+  color: blue;
+}
+
+/*趣味ここから*/
+
+.shumi{
+  padding:30px;
+}
+
+
+.sub-title{
+  font-size: 36px;
+  text-align: center;
+}
+
+.sub-title:hover{
+  font-size: 36px;
+  text-align: center;
+  color: blue;
+}
+
+.img-box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-box li{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 60px;
+}
+.img-box li:last-child{
+  margin-right: 0px;
+}
+
+.img-box li img{
+  height: 300px;
+  width: 300px;
+}
+.img-box li span{
+  font-size: 24px;
+  margin-top: 20px;
+}
+.tokugi {
+  background-color: #edf4f5;
+  padding:30px;
+}
+.sub-title{
+  margin-top: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #233f51;
+  color: #fff;
+  font-size: 100px;
+  padding: 5px;
+}
+
+ .anime{
+         animation: fadeIn 3s ease;
+    }
+    @keyframes fadeIn{
+  0%{
+       opacity: 0;
+       top: 100px;
+  }
+  100%{
+       opacity: 1;
+       top: 0px;
+  }  
+
+  
+  }
+
+
+.dreem{
+  position: relative;
+  background: skyblue;
+  width: 1200px;/*吹き出し幅*/
+  padding: 20px;/*内側の余白*/
+  border-radius: 10px;/*角の丸み*/
+  margin-bottom: 30px;/*下の余白*/
+}
+
+.dreem:before {
+  position: absolute;/*絶対配置*/
+  content: '';/*空に*/
+  border-top: 20px solid skyblue;/*三角を作る*/
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  top: 100%;/*下にフィット*/
+  left: 50%;/*中央配置*/
+  transform: translateX(-50%);/*一応ズレを補正*/
+}
