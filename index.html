@@ -86,7 +86,63 @@
   </main>
 
 
+
 </main>
+
+<div class="q-box">
+  <h2>住んだことのある街</h2>
+    <p class="description"></p>
+    <div class="toggle-menu">
+      <dt class="js-toggle">関東</dt>
+      <dd>千葉県・船橋市</dd>
+      <dd>千葉県・松戸市</dd>
+      <dd>東京都・江古田</dd>
+      <dd>東京都・吉祥寺</dd>
+      <dd>東京都・阿佐ヶ谷</dd>
+      <dd>東京都・荻窪</dd>
+      
+    </div>
+  </div>
+
+<div class="q-box">
+    <h2>スムーズスクロール</h2>
+    <p class="description">ページtopに戻るだけでなく、ページ内の特定箇所に移動する時のアニメーションをつけることもできる</p>
+    <div class="btn-wrapper">
+      <div class="btn js-scroll">ボタン</div>
+    </div>
+  </div>
+
+  <div class="q-box">
+    <h2>モーダル</h2>
+    <p class="description">モーダルウィンドウ表示、いろいろできちゃうよ</p>
+    <div class="btn-wrapper">
+      <div class="btn js-modal">ボタン</div>
+      <!-- div.modal-content>div.modal-close>span{*}^p{モーダル}+div#modal-bg.js-modal-close -->
+      <div class="btn-wrapper modal-wrapper">
+        <div class="modal-content">
+        <div class="modal-close js-modal-close">
+          <span>*</span>
+        </div>
+        <p>モーダル</p>
+      </div>
+        <div id="modal-bg" class="js-modal-close"></div>
+      </div>
+  </div>
+
+</div>
+
+<div class="q-box">
+    <h2>クリックで要素の表示非表示切り替え</h2>
+    <p class="description">ユーザーがクリックした時だけ表示、みたいな使い方ができますよ</p>
+    <div class="btn-wrapper">
+      <div id="js-show-btn" class="btn">表示</div>
+      <div id="js-hide-btn" class="btn">非表示</div>
+    </div>
+    <div class="box-wrapper">
+      <div id="js-target-element" class="box">これが消えますよ</div>
+    </div>
+
+  </div>
 
 <footer class="dreem">
   <span>夢は映画を撮ることです。</span>
@@ -94,5 +150,8 @@
   
 </footer>
 
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
